@@ -11,6 +11,8 @@ const port = process.env.PORT || 3000;
 
 app.use("/dist", express.static(path.resolve(__dirname, "./dist")))
 
+require('./build/dev-server')(app);
+
 app.get('*', (req,res)=> {
   res.send(indexHTML);
   res.end();

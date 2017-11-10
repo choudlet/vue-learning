@@ -1,7 +1,10 @@
 import Vue from 'vue';
 
 const app = new Vue({
-hello: "hi there"
+  data: {
+    hello: "hi OK"
+  }
+
 });
 
 export {app};
